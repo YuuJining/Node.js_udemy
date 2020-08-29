@@ -1,4 +1,14 @@
-const filesystem = require('fs')
-//.writeFileSync('notes.txt', 'My name is Yujin.')
+const getNotes = require('./notes.js')
 
-filesystem.appendFileSync('notes.txt', ' Challenge!')
+const msg = getNotes()
+console.log(msg)
+
+
+
+
+
+// const add = require('./utils.js')
+
+// const sum = add(5,100)
+
+// console.log(sum)
