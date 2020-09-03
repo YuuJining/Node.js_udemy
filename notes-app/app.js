@@ -8,6 +8,8 @@ console.log(msg)
 const greenMsg = chalk.red.bold.inverse('Success!')
 console.log(greenMsg)
 
+
+console.log(process.argv)
 // const add = require('./utils.js')
 
 // const sum = add(5,100)
