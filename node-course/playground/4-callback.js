@@ -32,7 +32,19 @@ const add = ((a,b,callback) => {
     }, 2000)
 })
 
+const minus = ((a,b,callback) => {
+    setTimeout(()=>{
+        console.log('Three seconds are up')
+        const total = a-b
+
+        callback(total)
+    }, 3000)  
+})
+
 add(1, 4, (sum) => {
     console.log(sum) // Should print: 5
 })
 
+minus(5, 1, (total) => {
+    console.log(total)
+})
