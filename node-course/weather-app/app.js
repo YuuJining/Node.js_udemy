@@ -9,8 +9,6 @@ if(!address) {
     geocode(address, (error, { latitude, longtitude, location} = {}) => {
         if(error) {
             return console.log(error)
-        } else {
-    
         }
     
         forecast(latitude , longtitude, (error, forecastData) => {
